@@ -1,0 +1,16 @@
+class Display{
+    Display()
+    {
+        System.out.println("This is constructor");
+    }
+    Display(int a)
+    {
+        System.out.println("This parameterized constructor");
+    }
+}
+class constructorExample{
+    public static void main(String[] args){
+        Display ob  = new Display();
+        Display obj = new Display(2);
+    }
+}
