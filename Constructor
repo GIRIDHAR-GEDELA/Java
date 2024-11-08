@@ -1,0 +1,20 @@
+class Car {
+    String name;
+    int year;
+    Car(String name,int year) {
+        this.name = name;
+        this.year = year;
+    }
+
+    void displayDetails() {
+        System.out.println("Car Name: " + name);
+        System.out.println("Car Year: " + year);
+    }
+}
+
+public class ConstructorExample {
+    public static void main(String[] args) {
+        Car myCar = new Car("BMW",2022);
+        myCar.displayDetails();
+    }
+}
