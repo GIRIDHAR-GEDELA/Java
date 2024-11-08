@@ -1,0 +1,23 @@
+class AgeInvalidException extends Exception {
+    public AgeInvalidException(String message) {
+        super(message);
+    }
+}
+
+class UserDefinedExceptionExample {
+    public static void checkAge(int age) throws AgeInvalidException {
+        if (age < 18) {
+            throw new AgeInvalidException("Age must be 18 or older.");
+        } else {
+            System.out.println("Age is valid: " + age);
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            checkAge(15);
+        } catch (AgeInvalidException e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+    }
+}
