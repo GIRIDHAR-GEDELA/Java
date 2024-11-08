@@ -1,0 +1,17 @@
+package example;
+
+class MyClass {
+    public void display() {
+        System.out.println("This is example package!");
+    }
+}
+
+-----------------------------
+import example.MyClass;
+
+public class TestPackage {
+    public static void main(String[] args) {
+        MyClass myClass = new MyClass();
+        myClass.display();
+    }
+}
