@@ -1,0 +1,23 @@
+import java.util.*;
+class Show{
+    void display()
+    {
+        System.out.println("Method without parameters");
+    }
+    void display(int a)
+    {
+        System.out.println("Method with single parameter");
+    }
+    void display(int a,int b)
+    {
+        System.out.println("Method with two parameters");
+    }
+}
+class Methodoverloading{
+    public static void main(String[] args){
+        Show ob = new Show();
+        ob.display();
+        ob.display(3);
+        ob.display(1,3);
+    }
+}
