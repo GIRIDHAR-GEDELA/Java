@@ -1,0 +1,20 @@
+import java.util.*;
+class Box{
+    float l,b,area;
+    void area(){
+        area = l*b;
+        System.out.println("Area = "+area);
+    }
+}
+class BoxDemo{
+    public static void main(String[] args){
+        Box b = new Box();
+        b.l = 2.5f;
+        b.b = 3.1f;
+        b.area();
+        Box b1 = new Box();
+        b1.l = 2.5f;
+        b1.b = 1.1f;
+        b1.area();
+    }
+}
