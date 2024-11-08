@@ -1,0 +1,21 @@
+class Datatypes
+{
+    static byte b;
+    static long l;
+    static short s;
+    static int i;
+    static float f;
+    static double d;
+    static char c;
+    static boolean bl;
+    public static void main(String[] args){
+        System.out.println("byte: "+b);
+        System.out.println("short: "+s);
+        System.out.println("long: "+l);
+        System.out.println("int: "+i);
+        System.out.println("float: "+f);
+        System.out.println("double: "+d);
+        System.out.println("boolean: "+bl);
+        System.out.println("character: "+c);
+    }
+}
